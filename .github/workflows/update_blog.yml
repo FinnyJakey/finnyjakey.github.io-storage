@@ -2,10 +2,11 @@ name: Update Blog
 
 # Controls when the workflow will run
 on:
-  push:
-    paths:
-      - "**"
-
+  workflow_run:
+    workflows: ["Update Posts List"]
+    types:
+      - completed
+      
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   update-blog:
