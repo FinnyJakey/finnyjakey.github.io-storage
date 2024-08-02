@@ -33,6 +33,10 @@ for subdir in os.listdir(categories_dir):
 
     posts_dir = os.path.join(subdir_path, 'posts')
 
+    if not os.path.exists(posts_dir):
+        os.makedirs(posts_dir)
+        continue
+
     posts = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
 
     for data in posts_list_data:
