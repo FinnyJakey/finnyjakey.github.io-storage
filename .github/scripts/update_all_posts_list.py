@@ -1,8 +1,10 @@
 import os
 import json
 from datetime import datetime
+import pytz
 
 categories_dir = 'categories'
+kst = pytz.timezone('Asia/Seoul')
 
 # if posts/ has no posts_list.json make one and give it []
 for subdir in os.listdir(categories_dir):
@@ -41,7 +43,7 @@ for subdir in os.listdir(categories_dir):
 
     for post in posts:
         if post not in [f'{item["path"].split("/")[1].removesuffix(".html")}.md' for item in posts_list_data]:
-            now = datetime.now()
+            now = datetime.now(kst)
 
             posts_list_data.append(
                 {
