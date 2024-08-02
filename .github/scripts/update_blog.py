@@ -183,7 +183,7 @@ def make_index(header, categories, miscellaneous):
 
 
 def make_html(text):
-    content_html = markdown.markdown(text, extensions=['extra', 'nl2br', 'toc'])
+    content_html = markdown.markdown(text, extensions=['extra', 'nl2br'])
 
     return f"""<!DOCTYPE html>
     <html lang="en">
