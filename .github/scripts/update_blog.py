@@ -166,7 +166,7 @@ def make_index(header, categories, miscellaneous):
         </div>
     </header>
     <main class="container flex flex-col px-8" id="main">
-        <article class="pt-6">
+        <article>
             <h2 class="font-jetbrainsMono text-lg tracking-tighter">
                 categories
             </h2>
