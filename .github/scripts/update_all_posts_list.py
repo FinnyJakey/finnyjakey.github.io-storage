@@ -3,7 +3,7 @@ import json
 from datetime import datetime
 import pytz
 
-categories_dir = '../../categories'
+categories_dir = 'categories'
 kst = pytz.timezone('Asia/Seoul')
 
 # if it has no posts directory or posts_list.json, make one and give it []
