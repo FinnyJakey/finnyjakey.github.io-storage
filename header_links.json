@@ -1,14 +1,10 @@
 [
   {
-    "title": "Google",
-    "link": "https://www.google.co.kr"
+    "title": "Github",
+    "link": "https://github.com/FinnyJakey"
   },
   {
-    "title": "Naver",
-    "link": "https://www.naver.com"
-  },
-  {
-    "title": "TailwindCSS",
-    "link": "https://www.tailwindcss.com"
+    "title": "Email",
+    "link": "mailto:yun9348@naver.com"
   }
 ]
