@@ -3,9 +3,11 @@ import os
 import shutil
 import subprocess
 from datetime import datetime
+import markdown
 
 GITHUB_TOKEN = os.getenv('TARGET_REPO_TOKEN')
 REPO_URL = 'github.com/FinnyJakey/finnyjakey.github.io.git'
+# REPO_URL = 'https://github.com/FinnyJakey/finnyjakey.github.io.git'
 REPO_DIR = 'finnyjakey.github.io'
 
 
@@ -180,6 +182,38 @@ def make_index(header, categories, miscellaneous):
 </html>"""
 
 
+def make_html(text):
+    content_html = markdown.markdown(text, extensions=['extra', 'nl2br'])
+
+    return f"""<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="../tailwind.config.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+              rel="stylesheet">
+
+        <link rel="icon" type="image/x-icon" href="../favicon.ico">
+        
+        <link rel="stylesheet" href="../github-markdown-light.css">
+        
+        <title>FinnyJakey's Dev Blog</title>
+    </head>
+    <body class="markdown-body min-h-screen bg-white antialiased font-jetbrainsMono text-[0.9rem] max-w-2xl">
+        <div class="flex min-h-screen flex-col py-8">
+            <main class="container flex flex-col px-8">
+                {content_html}
+            </main>
+        </div>
+    </body>
+    </html>"""
+
+
 # Categories Dir
 categories_dir = 'categories'
 
@@ -261,8 +295,7 @@ for subdir in os.listdir(categories_dir):
         content = os.path.join(f'{REPO_DIR}/{subdir}', f'{post.removesuffix(".md")}.html')
 
         with open(content, 'w') as f:
-            f.write(md)
-            # TODO: MAKE HTML AND REPLACE WITH ABOVE f.write(make_html(md))
+            f.write(make_html(md))
 
 # Git 커밋 및 푸시
 run_command(f'cd {REPO_DIR} && git add .')
