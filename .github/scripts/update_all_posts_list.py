@@ -3,10 +3,10 @@ import json
 from datetime import datetime
 import pytz
 
-categories_dir = 'categories'
+categories_dir = '../../categories'
 kst = pytz.timezone('Asia/Seoul')
 
-# if posts/ has no posts_list.json make one and give it []
+# if it has no posts directory or posts_list.json, make one and give it []
 for subdir in os.listdir(categories_dir):
     subdir_path = os.path.join(categories_dir, subdir)
 
@@ -16,6 +16,12 @@ for subdir in os.listdir(categories_dir):
     posts_list_file = os.path.join(subdir_path, 'posts_list.json')
 
     if not os.path.isfile(posts_list_file):
+        with open(posts_list_file, 'w') as f:
+            json.dump([], f, indent=2)
+
+    posts_dir = os.path.join(subdir_path, 'posts')
+
+    if not os.path.exists(posts_dir):
         with open(posts_list_file, 'w') as f:
             json.dump([], f, indent=2)
 
