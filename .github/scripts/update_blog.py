@@ -286,6 +286,10 @@ for subdir in os.listdir(categories_dir):
 
     posts_path = os.path.join(subdir_path, "posts")  # categories/daily/posts
 
+    if not os.path.exists(posts_path):
+        # os.makedirs(posts_path)
+        continue
+
     posts = [f for f in os.listdir(posts_path) if f.endswith('.md')]
 
     for post in posts:
