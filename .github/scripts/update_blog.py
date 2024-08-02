@@ -59,7 +59,7 @@ def make_list_index(category, datas):
 <body class="min-h-screen bg-white antialiased font-jetbrainsMono text-[0.9rem] max-w-lg">
     <div class="flex min-h-screen flex-col py-8">
         <main class="container flex flex-col px-8">
-            <article class="pt-6">
+            <article>
                 <h2 class="font-jetbrainsMono text-lg tracking-tighter">
                     {category}
                 </h2>
@@ -166,7 +166,7 @@ def make_index(header, categories, miscellaneous):
         </div>
     </header>
     <main class="container flex flex-col px-8" id="main">
-        <article>
+        <article class="pt-6">
             <h2 class="font-jetbrainsMono text-lg tracking-tighter">
                 categories
             </h2>
