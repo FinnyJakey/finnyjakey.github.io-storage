@@ -46,7 +46,7 @@ for subdir in os.listdir(categories_dir):
     posts = [f for f in os.listdir(posts_dir) if f.endswith('.md')]
 
     for data in posts_list_data:
-        data_path = f'{data["path"].split("/")[1].removesuffix(".html")}.md'
+        data_path = f'{data["path"].split("/")[1]}.md'
 
         if data_path not in posts:
             posts_list_data.remove(data)
@@ -59,7 +59,7 @@ for subdir in os.listdir(categories_dir):
                 {
                     "title": post.removesuffix(".md"),
                     "description": "-",
-                    "path": f'{subdir}/{post.removesuffix(".md")}.html',
+                    "path": f'{subdir}/{post.removesuffix(".md")}',
                     "date": now.strftime("%Y.%m.%d %H:%M")
                 }
             )
