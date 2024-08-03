@@ -17,7 +17,7 @@
 
 `github.io`로 레포를 하나 만들고 `index.html`만 담아서 Pages에서 원클릭으로 띄워보기로 한다.
 
-(Image for Pages)
+<img width="784" alt="Pages" src="https://github.com/user-attachments/assets/bcc2c9cf-49c7-4a58-a5d4-8dd609197e28">
 
 > 아주 잘 되는 구만 하하 시작이 좋아.
 
