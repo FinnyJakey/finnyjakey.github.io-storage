@@ -7,13 +7,13 @@
   },
   {
     "title": "markdown-all-syntax",
-    "description": "-",
+    "description": "마크다운 모든 문법 모음집",
     "path": "miscellaneous/markdown-all-syntax",
     "date": "2024.08.02 18:45"
   },
   {
-    "title": "blog-making-log",
-    "description": "-",
+    "title": "GitHub으로 블로그 만들기",
+    "description": "라이브러리, 프레임워크를 사용하지 않고 오직 HTML과 GitHub Actions로 모든 것을 만드는 과정",
     "path": "miscellaneous/blog-making-log",
     "date": "2024.08.04 03:28"
   }
