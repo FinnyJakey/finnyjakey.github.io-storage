@@ -7,13 +7,13 @@
   },
   {
     "title": "markdown-all-syntax",
-    "description": "마크다운 모든 문법 모음집",
+    "description": "\ub9c8\ud06c\ub2e4\uc6b4 \ubaa8\ub4e0 \ubb38\ubc95 \ubaa8\uc74c\uc9d1",
     "path": "miscellaneous/markdown-all-syntax",
     "date": "2024.08.02 18:45"
   },
   {
-    "title": "GitHub으로 블로그 만들기",
-    "description": "라이브러리, 프레임워크를 사용하지 않고 오직 HTML과 GitHub Actions로 모든 것을 만드는 과정",
+    "title": "GitHub\uc73c\ub85c \ube14\ub85c\uadf8 \ub9cc\ub4e4\uae30",
+    "description": "\ub77c\uc774\ube0c\ub7ec\ub9ac, \ud504\ub808\uc784\uc6cc\ud06c\ub97c \uc0ac\uc6a9\ud558\uc9c0 \uc54a\uace0 \uc624\uc9c1 HTML\uacfc GitHub Actions\ub85c \ubaa8\ub4e0 \uac83\uc744 \ub9cc\ub4dc\ub294 \uacfc\uc815",
     "path": "miscellaneous/blog-making-log",
     "date": "2024.08.04 03:28"
   }
