@@ -250,7 +250,7 @@ for subdir in os.listdir(categories_dir):
 
     with open(posts_list_file, 'w') as f:
         json.dump(posts_list_data, f, indent=2)
-````
+```
 
 간략하게 설명하면
 
