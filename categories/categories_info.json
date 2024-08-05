@@ -3,12 +3,11 @@
     "title": "iOS/SwiftUI",
     "path": "ios/",
     "description": "iOS/SwiftUI Posts",
-    "status": "Building"
+    "status": "Deactivated"
   },
   {
     "title": "Daily",
     "path": "daily/",
-    "description": "Daily story, chill out :D 잡다한 일상얘기",
-    "status": "Building"
+    "description": "Daily story, chill out :D 잡다한 일상얘기"
   }
 ]
