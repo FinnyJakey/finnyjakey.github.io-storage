@@ -1,13 +1,18 @@
 [
   {
+    "title": "Daily",
+    "path": "daily/",
+    "description": "Daily story, chill out :D 잡다한 일상얘기"
+  },
+  {
+    "title": "Computer Architecture",
+    "path": "computer-architecture/",
+    "description": "Basis of the computer"
+  },
+  {
     "title": "iOS/SwiftUI",
     "path": "ios/",
     "description": "iOS/SwiftUI Posts",
     "status": "No longer in use"
-  },
-  {
-    "title": "Daily",
-    "path": "daily/",
-    "description": "Daily story, chill out :D 잡다한 일상얘기"
   }
 ]
